@@ -29,14 +29,13 @@ public class CosmeticListener {
     @EventHandler
     public void onPlayerInventoryClickEvent(InventoryClickEvent event) {
         if (event.getClickedInventory() == null ||
-        !(event.getClickedInventory() instanceof PlayerInventory)) return;
+        !(event.getClickedInventory() instanceof PlayerInventory) || !event.getSlotType().equals(InventoryType.SlotType.ARMOR)) return;
 
         Player player = (Player) event.getWhoClicked();
 
         Cosmetic cosmetic = cosmeticHandler.getCosmetic(player.getUniqueId());
 
-        if (cosmetic == null || !cosmetic.getCosmeticType().equals(CosmeticType.ARMOR)
-        || !event.getSlotType().equals(InventoryType.SlotType.ARMOR)) return;
+        if (cosmetic == null || !cosmetic.getCosmeticType().equals(CosmeticType.ARMOR)) return;
 
         event.setCancelled(true);
     }
