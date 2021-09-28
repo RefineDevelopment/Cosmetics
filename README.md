@@ -14,4 +14,5 @@ public void onEnable() {
 
 - damt
 
-## Some cosmetics util made for Refine Development's Plugins by damt.
+## Note
+This was made in a hurry by damt, it has not been tested or used at all.
