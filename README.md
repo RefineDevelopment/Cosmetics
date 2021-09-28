@@ -12,3 +12,5 @@ public void onEnable() {
 }
 
 ```
+
+Some cosmetics util made for Refine Development's Plugins by damt.
