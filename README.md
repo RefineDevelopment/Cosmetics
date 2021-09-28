@@ -1,16 +1,17 @@
 # Cosmetics
-cosmetics util brrrr
+Cosmetics Utility for Refine Development
 
-### Register
-
-to register do this:
+### Registration
 
 ```java
 @Override
 public void onEnable() {
    new CosmeticHandler(this);
 }
-
 ```
 
-Some cosmetics util made for Refine Development's Plugins by damt.
+## Credits
+
+- damt
+
+## Some cosmetics util made for Refine Development's Plugins by damt.
